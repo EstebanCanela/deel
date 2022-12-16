@@ -5,7 +5,6 @@
 
 # dependencies
 **/node_modules
-**/database.sqlite3
 
 # testing
 **/coverage

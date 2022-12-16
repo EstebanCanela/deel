@@ -5,7 +5,7 @@ RUN npm install
 COPY . .
 RUN npm run seed
 COPY database.sqlite3 .
+RUN chmod -R 777 ./database.sqlite3
 RUN npm prune --production
 EXPOSE 3001
-USER node
 CMD [ "npm" , "run", "start:prod" ]

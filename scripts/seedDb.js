@@ -1,8 +1,5 @@
 const { Profile, Contract, Job } = require('../src/infrastructure/database/model');
 
-/* WARNING THIS WILL DROP THE CURRENT DATABASE */
-seed();
-
 async function seed() {
   // create tables
   await Profile.sync({ force: true });
@@ -227,3 +224,6 @@ async function seed() {
     }),
   ]);
 }
+
+/* WARNING THIS WILL DROP THE CURRENT DATABASE */
+seed();
