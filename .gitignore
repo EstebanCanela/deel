@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log
+
+# dependencies
+node_modules
+database.sqlite3
+
+# testing
+coverage
+
+# misc
+.DS_Store
+*.pem
+.build
+volume
+
+# debug
+npm-debug.log*
+
+# environment variables
+.env
+.aws/
