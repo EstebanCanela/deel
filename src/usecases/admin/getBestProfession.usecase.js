@@ -9,6 +9,8 @@ const getBestProfession = async ({ startDate, endDate }) => {
   const startDateFormatted = (startDate && dayjs(startDate).format(timeFormat)) || dayjs().format(timeFormat);
   const endDateFormatted = (endDate && dayjs(endDate).format(timeFormat)) || dayjs().format(timeFormat);
 
+  console.log(`Method: getBestPayers - Getting the best profession from: ${startDateFormatted} to: ${endDateFormatted}`);
+
   const bestProfession = await adminRepository.getBestProfession(startDateFormatted, endDateFormatted);
 
   if (!bestProfession.length) {

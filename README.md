@@ -1,6 +1,7 @@
 # DEEL BACKEND TASK
 
-  
+> **At the of this section you will find some [Technical decisions](#Technical-decisions) wrote by me.**
+
 
 💫 Welcome! 🎉
 
@@ -115,12 +116,26 @@ Given the time expectations of this exercise, we don't expect anyone to submit a
 
 It would be great for example if you'd write some unit test / simple frontend demostrating calls to your fresh APIs.
 
-  
 
-## Submitting the Assignment
+## Technical decisions
+### How to run the project 
 
-When you have finished the assignment, create a github repository and send us the link.
+I added a Dockerfile to run the project locally. In order to do that you should run the following commmand:
 
-  
+```bash
+make start
+```
 
-Thank you and good luck! 🙏
+In the `./docs` folder you will find a `Postman Collection` to perform request to this service
+
+I added a `nyc library` to report our code coverage
+###  Improvements
+
+- Add more unit test to test our componenents in isolate way
+- Add integrations test in order to see how all components in our project interact between each other
+- Add some fuzzing test to test a edge cases in our code
+- Add a logger and metrics library to add observability of our app.
+- Add an API documentation using Swagger
+- If the project continue growing we could migrate to an hexagonal architecture in order to achieve scalability and readability even we could migrate to a typing language like Typescript.
+
+Thanks 🎉
