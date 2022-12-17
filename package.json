@@ -8,7 +8,7 @@
     "start:prod": "node ./src/rest/server/server.js",
     "coverage": "nyc npm run test",
     "report": "nyc --reporter=lcov npm test",
-    "test": "mocha --recursive ./test",
+    "test": "mocha --recursive --exit ./test",
     "lint": "eslint --fix ."
   },
   "dependencies": {
